@@ -1,0 +1,28 @@
+{
+  "name": "fluidity",
+  "version": "0.0.1",
+  "description": "Worlds lightest-weight fully responsive css framework.",
+  "repository" : {
+    "type" : "git" ,
+    "url" : "http://github.com/mrmrs/fluidity.git"
+  },
+  "devDependencies": {
+    "gulp": "~3.5.5",
+    "gulp-livereload": "~0.2.0",
+    "gulp-minify-css": "~0.2.0",
+    "tiny-lr": "0.0.5",
+    "gulp-util": "~2.2.12",
+    "gulp-watch": "~0.5.0",
+    "gulp-csslint": "~0.1.3",
+    "gulp-imagemin": "~0.1.4",
+    "gulp-svgmin": "~0.4.1",
+    "gulp-autoprefixer": "0.0.5",
+    "gulp-ruby-sass": "~0.3.1"
+  },
+  "author": {
+    "name" : "@mrmrs",
+    "email" : "hi@mrmrs.cc",
+    "url" : "http://mrmrs.cc"
+   },
+  "license": "MIT"
+}
