@@ -2,6 +2,7 @@
   "name": "fluidity",
   "version": "0.0.1",
   "description": "Worlds lightest-weight fully responsive css framework.",
+  "style": "./css/fluidity.css",
   "repository" : {
     "type" : "git" ,
     "url" : "http://github.com/mrmrs/fluidity.git"
