@@ -1,1 +1,1 @@
-@charset "UTF-8";img{max-width:100%}.overflow-container{overflow-y:scroll;-webkit-overflow-scrolling:touch}
+@charset "UTF-8";img,canvas,iframe,video,svg{max-width:100%}.overflow-container{overflow-y:scroll;-webkit-overflow-scrolling:touch}
