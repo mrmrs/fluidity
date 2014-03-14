@@ -1,6 +1,6 @@
 {
   "name": "fluidity",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "Worlds lightest-weight fully responsive css framework.",
   "style": "./css/fluidity.css",
   "repository" : {
