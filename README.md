@@ -3,7 +3,7 @@
 ### A fully responsive css framework that is impossibly small
 
 HTML out of the box is almost 100% responsive.
-This stylesheet fixes that in 107 minified bytes.
+This stylesheet fixes that in 132 minified bytes.
 Let's make the web just a bit more responsive shall we?
 
 ## Installing fluidity
@@ -22,7 +22,7 @@ Or if you want to develop with the uncompressed version
 <link rel="stylesheet" href="css/fluidity.css">
 ```
 
-## Available build tools
+## Available build / dev tools
 
 If you'd like to use the available build tools just run
 
@@ -32,6 +32,27 @@ npm install -g gulp
 npm install
 gulp
 ```
+
+## Gulp Tasks
+
+Gulp is a javascript task runner.
+http://gulpjs.com
+
+There are a few common tasks that gulp takes care of here
+* Livereload
+* CSS minification
+* Autoprefixer
+* Sass
+* Lints the compiled css
+
+Run these from the root directory of the project.
+
+```gulp```
+Runs a live reload server and starts sass compilation while running csslint
+
+```gulp production```
+Minifies css
+
 
 # License
 

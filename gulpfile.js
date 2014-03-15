@@ -9,8 +9,6 @@ var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
     minifyCSS = require('gulp-minify-css'),
     sass = require('gulp-ruby-sass'),
-    imagemin = require('gulp-imagemin'),
-    svgmin = require('gulp-svgmin'),
     csslint = require('gulp-csslint');
 
 
@@ -28,22 +26,6 @@ gulp.task('reload', function(){
       return files.pipe(livereload(server));
     }));
 });
-
-
-// Task to optmize and minify images
-gulp.task('minify-img', function() {
-  return gulp.src('./img/**/*')
-    .pipe((imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
-    .pipe(gulp.dest('./img'));
-});
-
-// Task to optimize and minify svg
-gulp.task('minify-svg', function(){
-  gulp.src('./img/svg')
-          .pipe(svgmin())
-          .pipe(gulp.dest('./img/svg'));
-});
-
 
 // Use csslint without box-sizing or compatible vendor prefixes (these
 // don't seem to be kept up to date on what to yell about)
@@ -87,6 +69,6 @@ gulp.task('default', function(){
 });
 
 gulp.task('production', function(){
-    gulp.run('minify-css', 'minify-img', 'minify-svg');
+    gulp.run('minify-css');
 });
 
