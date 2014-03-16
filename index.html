@@ -25,13 +25,19 @@
       .btn:active { color: #888; }
       .stuff { margin-top: 2em; }
       .border-top { border-top:1px solid #777; }
+      .man { margin: 0; }
+      table a:link { color: #66e;}
+      table a:visited { color: #66e;}
+      table a:hover { color: #34b6e7; }
+      table a:active { color: #34b6e7; }
+      h3 { font-size: 16px; font-weight: 400; color: #66e; }
     </style>
   </head>
   <body>
     <header class="space-bottom">
       <h1 class="title mega">Fluidity</h1>
       <h2 class="subtitle">
-        HTML is <b>almost</b> 100% responsive out of the box. These 132 bytes of css fix the 'almost' part.
+        HTML is <b>almost</b> 100% responsive out of the box. These 115 bytes of css fix the 'almost' part.
       </h2>
       <div class="stuff">
         <p>
@@ -46,12 +52,16 @@
       <article class="space-bottom">
         <h2 class="subtitle highlight">Responsive images</h2>
         <img src="http://placekitten.com/2400/700">
+        <h3>Example code </h3>
+        <code>
+          &lt;img src="http://placekitten.com/2400/700"&gt;
+        </code>
       </article>
       <article class="space-bottom">
         <h2 class="subtitle highlight">Responsive tables</h2>
         <div class="overflow-container">
           <table>
-            <thead >
+            <thead>
               <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
@@ -70,7 +80,7 @@
                 <td>Morse</td>
                 <td>@mrmrs_</td>
                 <td>Pizza</td>
-                <td><a href="http://☠☣.ws">http://☠☣.ws</a></td>
+                <td><a href="http://☠☣.ws" title="writing by mrmrs">http://☠☣.ws</a></td>
                 <td>#C0FFEE</td>
                 <td>Francesca</td>
                 <td>Jasper</td>
@@ -81,7 +91,7 @@
                 <td>Sears</td>
                 <td>@connors</td>
                 <td>Pizza</td>
-                <td><a href="http://goratchet.com">http://goratchet.com</a></td>
+                <td><a href="http://goratchet.com" title="Ratchet - Build mobile apps with simple HTML‚ CSS‚ and JS components.">http://goratchet.com</a></td>
                 <td>#0074d9</td>
                 <td>Grumpy</td>
                 <td>Jasper</td>
@@ -92,7 +102,7 @@
                 <td>Otto</td>
                 <td>@mdo</td>
                 <td>Pizza</td>
-                <td><a href="http://getbootstrap.com">http://getbootstrap.com</a></td>
+                <td><a href="http://getbootstrap.com" title="Bootstrap - The most popular front-end framework for developing responsive, mobile first projects on the web.">http://getbootstrap.com</a></td>
                 <td>#069</td>
                 <td>Bubba</td>
                 <td>Smelly</td>
@@ -103,31 +113,41 @@
                 <td>Blk</td>
                 <td>@jxnblk</td>
                 <td>Hamburger Buttons</td>
-                <td><a href="http://catfinity.com">http://catfinity.com</></td>
-                <td>#111111</td>
-                <td>Francesca</td>
-                <td>Jasper</td>
-                <td>Sappho</td>
-              </tr>
-              <tr>
-                <td>Kristofer</td>
-                <td>Joseph</td>
-                <td>@dam</td>
-                <td>Pizza</td>
-                <td><a href="http://topcoat.io">topcoat</a></td>
-                <td>#ff0000</td>
-                <td>Francesca</td>
-                <td>Jasper</td>
-                <td>Sappho</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </article>
-      <article class="space-bottom">
-        <h2 class="subtitle highlight">Responsive preformatted text</h2>
-        <div class="overflow-container">
+                <td><a href="http://catfinity.com" title="cat gifs forever">http://catfinity.com</></td>
+                  <td>#111111</td>
+                  <td>Francesca</td>
+                  <td>Jasper</td>
+                  <td>Sappho</td>
+                </tr>
+                <tr>
+                  <td>Kristofer</td>
+                  <td>Joseph</td>
+                  <td>@dam</td>
+                  <td>Pizza</td>
+                  <td><a href="http://topcoat.io" title="CSS for clean and fast web apps.">http://topcoat.io</a></td>
+                  <td>#ddaa13</td>
+                  <td>Francesca</td>
+                  <td>Jasper</td>
+                  <td>Sappho</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Example code</h3>
           <pre>
+            <code>
+&lt;div class="overflow-container"&gt;
+ &lt;table&gt;
+   &lt;!-- table contents --&gt;
+ &lt;/table&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+        </article>
+        <article class="space-bottom">
+          <h2 class="subtitle highlight">Responsive preformatted text</h2>
+          <div class="overflow-container">
+            <pre>
             <code>
 # Add the strings before and after around each parm and print
 def surround(before, after, *items)
@@ -152,33 +172,43 @@ boffo(*a1)
 boffo(17, 3, *a2)
           </code>
         </pre>
-      </div>
-    </article>
-    <article class="space-bottom">
-      <h2 class="subtitle highlight">Responsive canvas elements</h2>
-      <!-- Example tweaked from http://www.html5canvastutorials.com/tutorials/html5-canvas-images/ -->
-      <canvas id="myCanvas" width="1600" height="700"></canvas>
-      <script>
-        var canvas = document.getElementById('myCanvas');
-        var context = canvas.getContext('2d');
-        var imageObj = new Image();
+          <h3>Example code</h3>
+          <pre><code>
+<div class="overflow-container">
+  &lt;pre&gt;
+    &lt;code&gt;
+      ... Code here ...
+    &lt;/code&gt;
+  &lt;/pre&gt;
+</div>
+          </pre></code>
+        </div>
+      </article>
+      <article class="space-bottom">
+        <h2 class="subtitle highlight">Responsive canvas elements</h2>
+        ... Example tweaked from http://www.html5canvastutorials.com/tutorials/html5-canvas-images/...
+        <canvas id="myCanvas" width="1600" height="700"></canvas>
+        <script>
+          var canvas = document.getElementById('myCanvas');
+          var context = canvas.getContext('2d');
+          var imageObj = new Image();
 
-        imageObj.onload = function() {
-          context.drawImage(imageObj, 0, 0);
-        };
+          imageObj.onload = function() {
+            context.drawImage(imageObj, 0, 0);
+          };
 imageObj.src = 'https://pbs.twimg.com/media/Bgt5EIfCcAAPlU5.jpg:large';
-      </script>
-    </article>
-    <article class="space-bottom">
-      <h2 class="subtitle highlight">Responsive iframes</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3152.6730589591807!2d-122.45870185000001!3d37.797701100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!1i0!3e6!4m0!4m5!1s0x808586df034cb7e7%3A0x8a5ee4c1f426a74d!2sThe+Presidio+Trust%2C+50+Moraga+Ave%2C+San+Francisco%2C+CA+94129!3m2!1d37.797748999999996!2d-122.45866699999999!5e0!3m2!1sen!2sus!4v1394756278147" width="100%" height="450" frameborder="0" style="border:0"></iframe>
-    </article>
-  </main>
-  <footer>
-    <p class="title">
-      A thing by <a href="http://mrmrs.cc" title="mrmrs • designer">mrmrs</a>
-      <br> <small><a href="http://opensource.org/licenses/MIT">MIT license</a></small>
-    </p>
-  </footer>
-</body>
+        </script>
+      </article>
+      <article class="space-bottom">
+        <h2 class="subtitle highlight">Responsive iframes</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3152.6730589591807!2d-122.45870185000001!3d37.797701100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!1i0!3e6!4m0!4m5!1s0x808586df034cb7e7%3A0x8a5ee4c1f426a74d!2sThe+Presidio+Trust%2C+50+Moraga+Ave%2C+San+Francisco%2C+CA+94129!3m2!1d37.797748999999996!2d-122.45866699999999!5e0!3m2!1sen!2sus!4v1394756278147" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+      </article>
+    </main>
+    <footer>
+      <p class="title">
+        A thing by <a href="http://mrmrs.cc" title="mrmrs • designer">mrmrs</a>
+        <br> <small><a href="http://opensource.org/licenses/MIT">MIT license</a></small>
+      </p>
+    </footer>
+  </body>
 </html>
