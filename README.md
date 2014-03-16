@@ -47,10 +47,14 @@ There are a few common tasks that gulp takes care of here
 
 Run these from the root directory of the project.
 
-```gulp```
+```
+gulp
+```
 Runs a live reload server and starts sass compilation while running csslint
 
-```gulp production```
+```
+gulp production
+```
 Minifies css
 
 
