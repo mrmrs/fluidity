@@ -10,10 +10,12 @@ Let's make the web just a bit more responsive shall we?
 
 #### Production
 
-Just include this file in the head of your html file.
+Step 1: include the fluidity stylesheet in your html file:
 ```
 <link rel="stylesheet" href="css/fluidity.min.css">
 ```
+
+Step 2: wrap any `<table>` or `<pre>` elements in a `<div class="overflow-container">`
 
 #### Development
 
