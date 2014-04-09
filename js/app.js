@@ -1,9 +1,0 @@
-/*
- * app.js
- *
- * author:
- * license:
- *
- */
-
-
