@@ -3,7 +3,7 @@
 ### A fully responsive css framework that is impossibly small
 
 HTML out of the box is almost 100% responsive.
-This stylesheet fixes that in 132 minified bytes.
+This stylesheet fixes that in 115 minified bytes.
 Let's make the web just a bit more responsive shall we?
 
 ## Installing fluidity
@@ -13,6 +13,18 @@ Let's make the web just a bit more responsive shall we?
 Just include this file in the head of your html file.
 ```
 <link rel="stylesheet" href="css/fluidity.min.css">
+```
+
+For elements that need to retain widths that might be wider than a devices
+viewport (i.e tables) - wrap them in a div with the class 'overflow-container'
+like so
+
+```html
+  <div class="overflow-container">
+    <table>
+      ...
+    </table>
+  </div>
 ```
 
 #### Development
@@ -47,10 +59,14 @@ There are a few common tasks that gulp takes care of here
 
 Run these from the root directory of the project.
 
-```gulp```
+```
+gulp
+```
 Runs a live reload server and starts sass compilation while running csslint
 
-```gulp production```
+```
+gulp production
+```
 Minifies css
 
 

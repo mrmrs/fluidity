@@ -9,7 +9,7 @@
     <meta name="description" content="A css shim to make HTML 100% responsive.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700,900" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/fluidity.min.css">
+    <link rel="stylesheet" href="css/fluidity.css">
     <style>
       body{ font-family:'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif; }
       a { text-decoration: none; }
@@ -186,7 +186,7 @@ boffo(17, 3, *a2)
       </article>
       <article class="space-bottom">
         <h2 class="subtitle highlight">Responsive canvas elements</h2>
-        ... Example tweaked from http://www.html5canvastutorials.com/tutorials/html5-canvas-images/...
+        <small>Example tweaked from <a href="http://www.html5canvastutorials.com/tutorials/html5-canvas-images/">HTML5 Canvas Tutorials</a>...</small>
         <canvas id="myCanvas" width="1600" height="700"></canvas>
         <script>
           var canvas = document.getElementById('myCanvas');
@@ -201,7 +201,9 @@ imageObj.src = 'https://pbs.twimg.com/media/Bgt5EIfCcAAPlU5.jpg:large';
       </article>
       <article class="space-bottom">
         <h2 class="subtitle highlight">Responsive iframes</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3152.6730589591807!2d-122.45870185000001!3d37.797701100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!1i0!3e6!4m0!4m5!1s0x808586df034cb7e7%3A0x8a5ee4c1f426a74d!2sThe+Presidio+Trust%2C+50+Moraga+Ave%2C+San+Francisco%2C+CA+94129!3m2!1d37.797748999999996!2d-122.45866699999999!5e0!3m2!1sen!2sus!4v1394756278147" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+        <div class="aspect-ratio">
+          <iframe class="aspect-ratio--object" src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3152.6730589591807!2d-122.45870185000001!3d37.797701100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!1i0!3e6!4m0!4m5!1s0x808586df034cb7e7%3A0x8a5ee4c1f426a74d!2sThe+Presidio+Trust%2C+50+Moraga+Ave%2C+San+Francisco%2C+CA+94129!3m2!1d37.797748999999996!2d-122.45866699999999!5e0!3m2!1sen!2sus!4v1394756278147" width="100%" frameborder="0" style="border:0"></iframe>
+        </div>
       </article>
     </main>
     <footer>

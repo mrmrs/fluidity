@@ -11,6 +11,27 @@ img, canvas, iframe, video, svg { max-width: 100%; }
 
 .overflow-container {
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+}
+
+/*
+  Aspect ratios for media objects i.e canvas, iframe, video, svg etc.
+  Defaults to 16x9
+*/
+
+.aspect-ratio {
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.aspect-ratio--object {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
