@@ -15,6 +15,18 @@ Just include this file in the head of your html file.
 <link rel="stylesheet" href="css/fluidity.min.css">
 ```
 
+For elements that need to retain widths that might be wider than a devices
+viewport (i.e tables) - wrap them in a div with the class 'overflow-container'
+like so
+
+```html
+  <div class="overflow-container">
+    <table>
+      ...
+    </table>
+  </div>
+```
+
 #### Development
 
 Or if you want to develop with the uncompressed version
