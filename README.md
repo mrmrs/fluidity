@@ -10,15 +10,14 @@ Let's make the web just a bit more responsive shall we?
 
 #### Production
 
-Just include this file in the head of your html file.
+Just include the fluidity css file in the head of your html file:
 ```
 <link rel="stylesheet" href="css/fluidity.min.css">
 ```
 
-For elements that need to retain widths that might be wider than a devices
-viewport (i.e tables) - wrap them in a div with the class 'overflow-container'
-like so
-
+For elements that need to retain widths that might be wider than a device's
+viewport (i.e tables), wrap them in a div with the class 'overflow-container'
+like so:
 ```html
   <div class="overflow-container">
     <table>
@@ -29,15 +28,14 @@ like so
 
 #### Development
 
-Or if you want to develop with the uncompressed version
+If you want to develop with the uncompressed version, include instead:
 ```
 <link rel="stylesheet" href="css/fluidity.css">
 ```
 
 ## Available build / dev tools
 
-If you'd like to use the available build tools just run
-
+If you'd like to use the available build tools just run:
 ```
 cd fluidity
 npm install -g gulp
@@ -47,27 +45,25 @@ gulp
 
 ## Gulp Tasks
 
-Gulp is a javascript task runner.
+Gulp is a JavaScript task runner.
 http://gulpjs.com
 
-There are a few common tasks that gulp takes care of here
+There are a few common tasks that gulp takes care of here:
 * Livereload
 * CSS minification
 * Autoprefixer
 * Sass
 * Lints the compiled css
 
-Run these from the root directory of the project.
-
+Run these from the root directory of the project. The command
 ```
 gulp
 ```
-Runs a live reload server and starts sass compilation while running csslint
-
+runs a live reload server and starts sass compilation while running csslint, while
 ```
 gulp production
 ```
-Minifies css
+also minifies the css.
 
 
 # License
