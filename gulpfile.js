@@ -9,7 +9,8 @@ var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
     minifyCSS = require('gulp-minify-css'),
     sass = require('gulp-ruby-sass'),
-    csslint = require('gulp-csslint');
+    csslint = require('gulp-csslint'),
+    size = require('gulp-size');
 
 
 // Task to minify all css files in the css directory
@@ -70,5 +71,8 @@ gulp.task('default', function(){
 
 gulp.task('production', function(){
     gulp.run('minify-css');
+     return gulp.src('css/fluidity.min.css')
+        .pipe(size())
+        .pipe(gulp.dest('css'));
 });
 
