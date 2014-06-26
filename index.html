@@ -8,29 +8,30 @@
     <meta name="author" content="@mrmrs">
     <meta name="description" content="A css shim to make HTML 100% responsive.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600,700,900" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro%7CSource+Sans+Pro:400,600,700,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/fluidity.css">
     <style>
-      body{ font-family:'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif; }
+      body{ font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif; }
       a { text-decoration: none; }
       .mega { font-size: 3em; }
       .title { text-transform: uppercase; letter-spacing: .2em; }
       .subtitle { font-weight: 400; }
       .space-bottom { margin-bottom: 4em; }
       .highlight { color: #66e; }
-      .btn { display:inline-block; padding: 1em 1.6em; text-decoration: none; border: 2px solid #eee; border-radius: .25em; margin-bottom:.5em;  margin-right: .25em;}
-      .btn:link { color:#333;}
-      .btn:visited { color:#333;}
+      .btn { display: inline-block; padding: 1em 1.6em; text-decoration: none; border: 2px solid #eee; border-radius: .25em; margin-bottom: .5em;  margin-right: .25em; }
+      .btn:link { color: #333; }
+      .btn:visited { color: #333; }
       .btn:hover { color: #999; }
       .btn:active { color: #888; }
       .stuff { margin-top: 2em; }
-      .border-top { border-top:1px solid #777; }
+      .border-top { border-top: 1px solid #777; }
       .man { margin: 0; }
       table a:link { color: #66e;}
       table a:visited { color: #66e;}
       table a:hover { color: #34b6e7; }
       table a:active { color: #34b6e7; }
       h3 { font-size: 16px; font-weight: 400; color: #66e; }
+      iframe { width: 100%; border: none; }
     </style>
   </head>
   <body>
@@ -42,8 +43,8 @@
       <div class="stuff">
         <p>
           <a class="btn" href="https://github.com/mrmrs/fluidity/zipball/master" title="Download the code">Download</a>
-          <a class="btn" href="http://github.com/mrmrs/fluidity" title="See it on Github">Fork</a>
-          <a class="btn" target="_blank" href="https://twitter.com/intent/tweet?text=A responsive web is a sexy web. &amp;url=http://fluidity.sexy&amp;via=mrmrs_">Tweet</a>
+          <a class="btn" href="https://github.com/mrmrs/fluidity" title="See it on Github">Fork</a>
+          <a class="btn" target="_blank" href="https://twitter.com/intent/tweet?text=A+responsive+web+is+a+sexy+web.&amp;url=http://fluidity.sexy&amp;via=mrmrs_">Tweet</a>
         </p>
       </div>
     </header>
@@ -51,10 +52,10 @@
       <h1 class="title">Examples</h1>
       <article class="space-bottom">
         <h2 class="subtitle highlight">Responsive images</h2>
-        <img src="http://placekitten.com/2400/700">
+        <img src="http://placekitten.com/2400/700" alt="placeholder kitten">
         <h3>Example code </h3>
         <code>
-          &lt;img src="http://placekitten.com/2400/700"&gt;
+          &lt;img src="http://placekitten.com/2400/700" alt="placeholder kitten"&gt;
         </code>
       </article>
       <article class="space-bottom">
@@ -102,7 +103,7 @@
                 <td>Otto</td>
                 <td>@mdo</td>
                 <td>Pizza</td>
-                <td><a href="http://getbootstrap.com" title="Bootstrap - The most popular front-end framework for developing responsive, mobile first projects on the web.">http://getbootstrap.com</a></td>
+                <td><a href="http://getbootstrap.com" title="Bootstrap - The most popular front-end framework in the world">http://getbootstrap.com</a></td>
                 <td>#069</td>
                 <td>Bubba</td>
                 <td>Smelly</td>
@@ -204,7 +205,7 @@ boffo(17, 3, *a2)
       <article class="space-bottom">
         <h2 class="subtitle highlight">Responsive iframes</h2>
         <div class="aspect-ratio">
-          <iframe class="aspect-ratio--object" src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3152.6730589591807!2d-122.45870185000001!3d37.797701100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!1i0!3e6!4m0!4m5!1s0x808586df034cb7e7%3A0x8a5ee4c1f426a74d!2sThe+Presidio+Trust%2C+50+Moraga+Ave%2C+San+Francisco%2C+CA+94129!3m2!1d37.797748999999996!2d-122.45866699999999!5e0!3m2!1sen!2sus!4v1394756278147" width="100%" frameborder="0" style="border:0"></iframe>
+          <iframe class="aspect-ratio--object" src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3152.6730589591807!2d-122.45870185000001!3d37.797701100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!1i0!3e6!4m0!4m5!1s0x808586df034cb7e7%3A0x8a5ee4c1f426a74d!2sThe+Presidio+Trust%2C+50+Moraga+Ave%2C+San+Francisco%2C+CA+94129!3m2!1d37.797748999999996!2d-122.45866699999999!5e0!3m2!1sen!2sus!4v1394756278147"></iframe>
         </div>
       </article>
     </main>
