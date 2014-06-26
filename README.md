@@ -11,7 +11,7 @@ Let's make the web just a bit more responsive shall we?
 #### Production
 
 Just include the fluidity css file in the head of your html file:
-```
+```html
 <link rel="stylesheet" href="css/fluidity.min.css">
 ```
 
@@ -29,7 +29,7 @@ like so:
 #### Development
 
 If you want to develop with the uncompressed version, include instead:
-```
+```html
 <link rel="stylesheet" href="css/fluidity.css">
 ```
 
