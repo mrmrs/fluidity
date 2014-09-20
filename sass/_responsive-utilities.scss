@@ -4,7 +4,15 @@
 
 */
 
-img, canvas, iframe, video, svg { max-width: 100%; }
+img, canvas, iframe, video, svg, select, textarea { max-width: 100%; }
+
+/* So padding of the textarea dosen't push the content outside the viewport */
+select,
+textarea {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 
 /* Wrap tables or pre elements in a div with this class */
