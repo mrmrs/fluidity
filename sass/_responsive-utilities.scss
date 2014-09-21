@@ -4,8 +4,15 @@
 
 */
 
-img, canvas, iframe, video, svg { max-width: 100%; }
-
+img, 
+canvas, 
+iframe, 
+video, 
+svg, 
+select, 
+textarea { 
+  max-width: 100%; 
+}
 
 /* Wrap tables or pre elements in a div with this class */
 
@@ -25,12 +32,12 @@ img, canvas, iframe, video, svg { max-width: 100%; }
 }
 
 .aspect-ratio--object {
-    bottom: 0;
     height: 100%;
-    left: 0;
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
     z-index: 100;
 }
