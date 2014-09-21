@@ -8,15 +8,23 @@
     "url": "http://github.com/mrmrs/fluidity.git"
   },
   "devDependencies": {
-    "gulp": "~3.5.5",
-    "gulp-livereload": "~0.2.0",
-    "gulp-minify-css": "~0.2.0",
-    "tiny-lr": "0.0.5",
-    "gulp-util": "~2.2.12",
-    "gulp-watch": "~0.5.0",
-    "gulp-csslint": "~0.1.3",
-    "gulp-autoprefixer": "0.0.5",
-    "gulp-ruby-sass": "~0.3.1"
+    "browser-sync": "^1.1.1",
+    "gulp": "^3.8.2",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-csslint": "^0.1.4",
+    "gulp-imagemin": "^0.6.1",
+    "gulp-jshint": "^1.6.4",
+    "gulp-minify-css": "^0.3.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-rework": "^0.3.0",
+    "gulp-sass": "^0.7.2",
+    "gulp-shell": "^0.2.9",
+    "gulp-size": "^0.4.0",
+    "gulp-uncss": "^0.4.4",
+    "gulp-util": "^2.2.18",
+    "gulp-watch": "^0.6.8",
+    "imagemin-pngcrush": "^0.1.0",
+    "jshint-stylish": "^0.2.0"
   },
   "author": {
     "name": "@mrmrs",
