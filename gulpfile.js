@@ -16,6 +16,7 @@ var gulp = require('gulp'),
     stylish = require('jshint-stylish'),
     shell = require('gulp-shell'),
     browserSync = require('browser-sync'),
+    header = require('gulp-header');
     browserReload = browserSync.reload;
 
 /* MINIFY CSS
@@ -29,6 +30,7 @@ gulp.task('minify-css', function(){
     .pipe(minifyCSS())
     .pipe(size({gzip: false, showFiles: true, title:'minified css'}))
     .pipe(size({gzip: true, showFiles: true, title:'minified css'}))
+    .pipe(header('/*!mrmrs/fluidity v<%= pkg.version %> (c)2014 @license <%= pkg.license %>')
     .pipe(rename('fluidity.min.css'))
     .pipe(gulp.dest('./css/'));
 });
