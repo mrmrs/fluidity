@@ -3,7 +3,7 @@
 ### A fully responsive css framework that is impossibly small
 
 HTML out of the box is almost 100% responsive.
-This stylesheet fixes that in 247 minified bytes.
+This stylesheet accomplishes that in 247 minified bytes.
 Let's make the web just a bit more responsive shall we?
 
 ## Installing fluidity
@@ -89,4 +89,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
