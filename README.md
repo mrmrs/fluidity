@@ -2,8 +2,8 @@
 
 ### A fully responsive css framework that is impossibly small
 
-HTML out of the box is almost 100% responsive.
-This stylesheet accomplishes that in 247 minified bytes.
+Html is almost 100% responsive out of the box.
+This stylesheet patches the remaining holes to get to 100% and in just 247 minified bytes.
 Let's make the web just a bit more responsive shall we?
 
 ## Installing fluidity
