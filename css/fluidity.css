@@ -7,7 +7,7 @@
 img, canvas, iframe, video, svg { max-width: 100%; }
 
 /* Wrap tables or pre elements in a div with this class */
-.overflow-container { overflow-y: scroll; }
+.overflow-container { overflow-x: scroll; }
 
 /* Aspect ratios for media objects i.e canvas, iframe, video, svg etc. Defaults to 16x9
 */
