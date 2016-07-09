@@ -72,9 +72,51 @@
   },
   "content": [
     {
+      "component": "nav/AbsoluteNav",
+      "links": [
+        {
+          "href": "http://fluidity.sexy",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/mrmrs/fluidity",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/fluidity",
+          "text": "npm"
+        }
+      ]
+    },
+    {
       "component": "header/BannerHeader",
-      "heading": "Hello",
-      "text": "Welcome to your new Compositor site. Edit the styles and content to get started. Then publish your changes."
+      "heading": "fluidity",
+      "subhead": "The worlds smallest fully-responsive css framework",
+      "links": [
+        {
+          "text": "Tweet",
+          "href": "https://twitter.com/intent/tweet?text=fluidity%253A%2520The%2520worlds%2520smallest%2520fully-responsive%2520css%2520framework&url=http%253A%252F%252Ffluidity.sexy"
+        }
+      ],
+      "text": "v0.2.0"
+    },
+    {
+      "component": "article/BasicArticle",
+      "text": "<h1 id=\"fluidity\">FLUIDITY</h1>\n<h3 id=\"a-fully-responsive-css-framework-that-is-impossibly-small\">A fully responsive css framework that is impossibly small</h3>\n<p>HTML is almost 100% responsive out of the box.\nThis stylesheet patches the remaining holes to get to 100% and in just 247 minified bytes.\nLet&apos;s make the web just a bit more responsive shall we?</p>\n<h2 id=\"installing-fluidity\">Installing fluidity</h2>\n<h4 id=\"production\">Production</h4>\n<p>Just include the fluidity css file in the head of your html file:</p>\n<pre><code class=\"lang-html\">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/fluidity.min.css&quot;&gt;\n</code></pre>\n<p>For elements that need to retain widths that might be wider than a device&apos;s\nviewport (i.e tables), wrap them in a div with the class &apos;overflow-container&apos;\nlike so:</p>\n<pre><code class=\"lang-html\">  &lt;div class=&quot;overflow-container&quot;&gt;\n    &lt;table&gt;\n      ...\n    &lt;/table&gt;\n  &lt;/div&gt;\n</code></pre>\n<h4 id=\"development\">Development</h4>\n<p>If you want to develop with the uncompressed version, include instead:</p>\n<pre><code class=\"lang-html\">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/fluidity.css&quot;&gt;\n</code></pre>\n<h2 id=\"available-build-dev-tools\">Available build / dev tools</h2>\n<p>If you&apos;d like to use the available build tools just run:</p>\n<pre><code>cd fluidity\nnpm install -g gulp\nnpm install\ngulp\n</code></pre><h2 id=\"gulp-tasks\">Gulp Tasks</h2>\n<p>Gulp is a JavaScript task runner.\n<a href=\"http://gulpjs.com\">http://gulpjs.com</a></p>\n<p>There are a few common tasks that gulp takes care of here:</p>\n<ul>\n<li>Livereload</li>\n<li>CSS minification</li>\n<li>Autoprefixer</li>\n<li>Sass</li>\n<li>Lints the compiled css</li>\n</ul>\n<p>Run these from the root directory of the project. The command</p>\n<pre><code>gulp\n</code></pre><p>runs a live reload server and starts sass compilation while running csslint, while</p>\n<pre><code>gulp production\n</code></pre><p>also minifies the css.</p>\n<h1 id=\"license\">License</h1>\n<p>The MIT License (MIT)</p>\n<p>Copyright (c) 2014 @mrmrs</p>\n<p>Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the &quot;Software&quot;), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:</p>\n<p>The above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.</p>\n<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.</p>\n",
+      "html": "<h1 id=\"fluidity\">FLUIDITY</h1>\n<h3 id=\"a-fully-responsive-css-framework-that-is-impossibly-small\">A fully responsive css framework that is impossibly small</h3>\n<p>HTML is almost 100% responsive out of the box.\nThis stylesheet patches the remaining holes to get to 100% and in just 247 minified bytes.\nLet&apos;s make the web just a bit more responsive shall we?</p>\n<h2 id=\"installing-fluidity\">Installing fluidity</h2>\n<h4 id=\"production\">Production</h4>\n<p>Just include the fluidity css file in the head of your html file:</p>\n<pre><code class=\"lang-html\">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/fluidity.min.css&quot;&gt;\n</code></pre>\n<p>For elements that need to retain widths that might be wider than a device&apos;s\nviewport (i.e tables), wrap them in a div with the class &apos;overflow-container&apos;\nlike so:</p>\n<pre><code class=\"lang-html\">  &lt;div class=&quot;overflow-container&quot;&gt;\n    &lt;table&gt;\n      ...\n    &lt;/table&gt;\n  &lt;/div&gt;\n</code></pre>\n<h4 id=\"development\">Development</h4>\n<p>If you want to develop with the uncompressed version, include instead:</p>\n<pre><code class=\"lang-html\">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/fluidity.css&quot;&gt;\n</code></pre>\n<h2 id=\"available-build-dev-tools\">Available build / dev tools</h2>\n<p>If you&apos;d like to use the available build tools just run:</p>\n<pre><code>cd fluidity\nnpm install -g gulp\nnpm install\ngulp\n</code></pre><h2 id=\"gulp-tasks\">Gulp Tasks</h2>\n<p>Gulp is a JavaScript task runner.\n<a href=\"http://gulpjs.com\">http://gulpjs.com</a></p>\n<p>There are a few common tasks that gulp takes care of here:</p>\n<ul>\n<li>Livereload</li>\n<li>CSS minification</li>\n<li>Autoprefixer</li>\n<li>Sass</li>\n<li>Lints the compiled css</li>\n</ul>\n<p>Run these from the root directory of the project. The command</p>\n<pre><code>gulp\n</code></pre><p>runs a live reload server and starts sass compilation while running csslint, while</p>\n<pre><code>gulp production\n</code></pre><p>also minifies the css.</p>\n<h1 id=\"license\">License</h1>\n<p>The MIT License (MIT)</p>\n<p>Copyright (c) 2014 @mrmrs</p>\n<p>Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the &quot;Software&quot;), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:</p>\n<p>The above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.</p>\n<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.</p>\n"
+    },
+    {
+      "component": "footer/BasicFooter",
+      "links": [
+        {
+          "href": "https://github.com/mrmrs/fluidity",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/mrmrs",
+          "text": "mrmrs"
+        }
+      ]
     }
   ]
 }
