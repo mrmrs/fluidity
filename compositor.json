@@ -72,7 +72,7 @@
   },
   "content": [
     {
-      "component": "header/BannerHeader",
+      "component": "section/BasicSection",
       "heading": "fluidity",
       "subhead": "The worlds smallest fully-responsive css framework",
       "links": [
