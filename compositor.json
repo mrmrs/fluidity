@@ -72,23 +72,6 @@
   },
   "content": [
     {
-      "component": "nav/AbsoluteNav",
-      "links": [
-        {
-          "href": "http://fluidity.sexy",
-          "text": "Home"
-        },
-        {
-          "href": "https://github.com/mrmrs/fluidity",
-          "text": "GitHub"
-        },
-        {
-          "href": "https://npmjs.com/package/fluidity",
-          "text": "npm"
-        }
-      ]
-    },
-    {
       "component": "header/BannerHeader",
       "heading": "fluidity",
       "subhead": "The worlds smallest fully-responsive css framework",
